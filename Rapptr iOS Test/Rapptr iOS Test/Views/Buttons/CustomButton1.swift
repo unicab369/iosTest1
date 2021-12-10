@@ -26,7 +26,7 @@ class CustomButtom1: UIButton {
     func setup() {
         self.clipsToBounds = true
         self.layer.cornerRadius = 8.0
-        self.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        self.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         
         self.imageView?.contentMode = .scaleAspectFit
         self.imageView?.tintColor = .black
