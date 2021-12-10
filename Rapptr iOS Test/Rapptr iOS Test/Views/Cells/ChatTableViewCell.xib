@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="66" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-U7-rWh">
+                        <rect key="frame" x="68" y="11" width="272" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4D-p6-QTk" customClass="CustomLabel1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                        <rect key="frame" x="68" y="36" width="222" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nli-Yl-dPJ">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="4RA-Oa-KcU"/>
+                            <constraint firstAttribute="width" constant="50" id="E9C-Y4-iSU"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-jS-NeC">
+                        <rect key="frame" x="23" y="23" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2OV-3J-oB1"/>
+                    <constraint firstItem="R4D-p6-QTk" firstAttribute="top" secondItem="NHn-U7-rWh" secondAttribute="bottom" constant="4" id="2x2-qh-icu"/>
+                    <constraint firstAttribute="trailing" secondItem="R4D-p6-QTk" secondAttribute="trailing" constant="30" id="9SZ-Nx-Rsp"/>
+                    <constraint firstItem="R4D-p6-QTk" firstAttribute="leading" secondItem="nli-Yl-dPJ" secondAttribute="trailing" constant="10" id="Cn0-kw-gkS"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="leading" secondItem="nli-Yl-dPJ" secondAttribute="trailing" constant="10" id="Dgp-cY-NnE"/>
+                    <constraint firstItem="nDB-jS-NeC" firstAttribute="centerX" secondItem="nli-Yl-dPJ" secondAttribute="centerX" id="KHX-oa-gnm"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="36" id="Wrd-em-WfJ"/>
+                    <constraint firstItem="nDB-jS-NeC" firstAttribute="centerY" secondItem="nli-Yl-dPJ" secondAttribute="centerY" id="eb3-vk-Dxn"/>
+                    <constraint firstItem="nli-Yl-dPJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g0A-P8-5di"/>
+                    <constraint firstItem="nli-Yl-dPJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qof-sD-6j7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="body" destination="R4D-p6-QTk" id="LKm-6c-fqr"/>
+                <outlet property="header" destination="NHn-U7-rWh" id="gmc-dR-cCO"/>
+                <outlet property="iconView" destination="nli-Yl-dPJ" id="P9k-a9-tQS"/>
+                <outlet property="indicator" destination="nDB-jS-NeC" id="tmn-jX-I2k"/>
+            </connections>
+            <point key="canvasLocation" x="90" y="70"/>
+        </tableViewCell>
+    </objects>
+</document>

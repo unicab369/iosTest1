@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuController" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="animationButton" destination="GMg-kP-m4P" id="Aqc-XO-LxI"/>
+                <outlet property="chatButton" destination="fb9-U1-gpY" id="Uml-0U-G9U"/>
+                <outlet property="loginButton" destination="kPx-kg-a6Z" id="bvE-Dl-eg1"/>
+                <outlet property="topTittle" destination="mhR-J9-Fbn" id="RhX-OD-LfK"/>
+                <outlet property="topView" destination="aci-Cd-t7x" id="ozA-Jp-SjJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eyE-lS-P9s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="oIZ-4P-gad">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aci-Cd-t7x">
+                    <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhR-J9-Fbn">
+                            <rect key="frame" x="186.5" y="23.5" width="41.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="mhR-J9-Fbn" firstAttribute="centerX" secondItem="aci-Cd-t7x" secondAttribute="centerX" id="6q8-Dt-OUk"/>
+                        <constraint firstAttribute="bottom" secondItem="mhR-J9-Fbn" secondAttribute="bottom" constant="20" id="8pn-wG-Gm3"/>
+                        <constraint firstAttribute="height" constant="64" id="RNg-Tm-iSW"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-M4-KkH">
+                    <rect key="frame" x="30" y="346.5" width="354" height="213"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-U1-gpY" userLabel="UIButton" customClass="CustomButtom1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="y7H-9l-lPq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="CHAT">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="chatButtonTapped:" destination="-1" eventType="touchUpInside" id="WVx-xp-f03"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-kg-a6Z" userLabel="UIButton" customClass="CustomButtom1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="79" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Z6l-5d-mGX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="LOGIN">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="yov-zG-jgc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMg-kP-m4P" userLabel="UIButton" customClass="CustomButtom1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="158" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Laa-WK-nfW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="ANIMATION">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="animationButtonTapped:" destination="-1" eventType="touchUpInside" id="x83-cq-mR2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aci-Cd-t7x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0Lk-gd-975"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aci-Cd-t7x" secondAttribute="trailing" id="45N-24-Lmv"/>
+                <constraint firstItem="eoW-M4-KkH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="4WH-En-1cx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oIZ-4P-gad" secondAttribute="bottom" id="9ff-HL-7pQ"/>
+                <constraint firstItem="oIZ-4P-gad" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QUa-Hq-ve6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oIZ-4P-gad" secondAttribute="trailing" id="T1n-MT-2RZ"/>
+                <constraint firstItem="eoW-M4-KkH" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="U7g-Ro-w6R"/>
+                <constraint firstItem="oIZ-4P-gad" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j6A-am-1Qb"/>
+                <constraint firstItem="aci-Cd-t7x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r7s-Iw-xrh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eoW-M4-KkH" secondAttribute="trailing" constant="30" id="y9n-qy-z8N"/>
+            </constraints>
+            <point key="canvasLocation" x="106" y="111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_home_menu" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

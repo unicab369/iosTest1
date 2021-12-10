@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="zv0-Cv-gGM" id="iq5-jj-gyd"/>
+                <outlet property="emailTextField" destination="TDr-at-y0v" id="Bzh-ND-Geb"/>
+                <outlet property="loginButton" destination="OyN-oc-lJi" id="Pf5-OJ-lhY"/>
+                <outlet property="passwordTextField" destination="Yqc-w4-612" id="CZR-Ee-X2z"/>
+                <outlet property="topLabel" destination="Mau-ma-aJe" id="4rP-l4-03r"/>
+                <outlet property="topView" destination="ymn-OI-ZdN" id="9FN-rq-cCF"/>
+                <outlet property="view" destination="9Eq-O2-jde" id="4U9-Q7-FNu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9Eq-O2-jde">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_login" translatesAutoresizingMaskIntoConstraints="NO" id="eKL-Ye-cN4">
+                    <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-OI-ZdN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-ma-aJe">
+                            <rect key="frame" x="186.5" y="23.5" width="41.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv0-Cv-gGM">
+                            <rect key="frame" x="24" y="19" width="60" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="ORK-Et-UwN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="         " image="chevron.left" catalog="system"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="N9Z-9L-MpU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="K5R-Xv-UNL"/>
+                        <constraint firstItem="zv0-Cv-gGM" firstAttribute="leading" secondItem="ymn-OI-ZdN" secondAttribute="leading" constant="24" id="TpS-uR-Gdu"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="gQZ-jb-edi"/>
+                        <constraint firstAttribute="bottom" secondItem="Mau-ma-aJe" secondAttribute="bottom" constant="20" id="qTy-Wr-Hhr"/>
+                        <constraint firstItem="Mau-ma-aJe" firstAttribute="centerX" secondItem="ymn-OI-ZdN" secondAttribute="centerX" id="r6z-xD-avf"/>
+                        <constraint firstItem="zv0-Cv-gGM" firstAttribute="centerY" secondItem="ymn-OI-ZdN" secondAttribute="centerY" id="y7o-Hi-8Uc"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="xOI-rP-amn">
+                    <rect key="frame" x="30" y="172" width="354" height="213"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDr-at-y0v" userLabel="UITextField" customClass="CustomTextField1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="J7R-Al-nY5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqc-w4-612" userLabel="UITextField" customClass="CustomTextField1" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="79" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="EEI-dG-4He"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyN-oc-lJi">
+                            <rect key="frame" x="0.0" y="158" width="354" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="M2I-7B-W6p"/>
+                            </constraints>
+                            <state key="normal" title="LOGIN"/>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="7eK-AG-VPW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="DO4-7f-xqO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DO4-7f-xqO" firstAttribute="trailing" secondItem="xOI-rP-amn" secondAttribute="trailing" constant="30" id="3bC-IG-LjR"/>
+                <constraint firstAttribute="trailing" secondItem="ymn-OI-ZdN" secondAttribute="trailing" id="7g2-mb-M5q"/>
+                <constraint firstItem="eKL-Ye-cN4" firstAttribute="leading" secondItem="DO4-7f-xqO" secondAttribute="leading" id="BDR-nz-zzm"/>
+                <constraint firstItem="ymn-OI-ZdN" firstAttribute="top" secondItem="DO4-7f-xqO" secondAttribute="top" id="Suz-GV-q1y"/>
+                <constraint firstItem="ymn-OI-ZdN" firstAttribute="leading" secondItem="DO4-7f-xqO" secondAttribute="leading" id="ZCZ-04-4mJ"/>
+                <constraint firstItem="xOI-rP-amn" firstAttribute="leading" secondItem="9Eq-O2-jde" secondAttribute="leading" constant="30" id="pjM-wm-xL6"/>
+                <constraint firstItem="eKL-Ye-cN4" firstAttribute="top" secondItem="ymn-OI-ZdN" secondAttribute="bottom" id="sX9-kS-J9v"/>
+                <constraint firstItem="xOI-rP-amn" firstAttribute="top" secondItem="ymn-OI-ZdN" secondAttribute="bottom" constant="64" id="udf-z0-8Nq"/>
+                <constraint firstItem="DO4-7f-xqO" firstAttribute="bottom" secondItem="eKL-Ye-cN4" secondAttribute="bottom" id="w9L-MK-nZW"/>
+                <constraint firstItem="DO4-7f-xqO" firstAttribute="trailing" secondItem="eKL-Ye-cN4" secondAttribute="trailing" id="y7j-X0-hKL"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="img_login" width="376" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
