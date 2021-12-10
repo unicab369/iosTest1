@@ -21,7 +21,7 @@ class CustomTextField1: UITextField {
         super.layoutSubviews()
         self.layer.cornerRadius = 8.0
         self.layer.masksToBounds = true
-        self.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         self.borderStyle = .none
     }
     

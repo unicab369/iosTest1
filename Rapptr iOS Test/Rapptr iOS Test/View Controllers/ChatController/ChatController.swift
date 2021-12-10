@@ -106,8 +106,8 @@ extension ChatController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let target = messages[indexPath.row]
-        let messageHeight = target.message.heightWithConstrainedWidth(width: self.view.frame.width-50, font: StyleFont.chatMessageFont)
-        return 70 + messageHeight
+        let messageHeight = target.message.heightWithConstrainedWidth(width: self.view.frame.width, font: StyleFont.chatMessageFont)
+        return 65 + messageHeight
     }
 }
 
